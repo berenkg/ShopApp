@@ -6,3 +6,9 @@ C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Business\obj\Debug\netcoreapp2.2\ShopAp
 C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Business\obj\Debug\netcoreapp2.2\ShopApp.Business.AssemblyInfo.cs
 C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Business\obj\Debug\netcoreapp2.2\ShopApp.Business.dll
 C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Business\obj\Debug\netcoreapp2.2\ShopApp.Business.pdb
+C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Business\bin\Debug\netcoreapp2.2\ShopApp.Entities.dll
+C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Business\bin\Debug\netcoreapp2.2\ShoppApp.DataAccess.dll
+C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Business\bin\Debug\netcoreapp2.2\ShopApp.Entities.pdb
+C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Business\bin\Debug\netcoreapp2.2\ShoppApp.DataAccess.pdb
+C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Business\obj\Debug\netcoreapp2.2\ShopApp.Business.csprojAssemblyReference.cache
+C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Business\obj\Debug\netcoreapp2.2\ShopApp.Business.csproj.CopyComplete

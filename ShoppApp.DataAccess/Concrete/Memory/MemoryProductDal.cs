@@ -23,10 +23,10 @@ namespace ShoppApp.DataAccess.Concrete.Memory
         {
             var product = new List<Product>()
             {
-                new Product() {Id=1, Name="Samsung S6", ImageUrl="-", Price="100", ProductCategories"YOK"},
-                new Product() {Id=2, Name="Samsung S7", ImageUrl="-", Price="100", ProductCategories"YOK"},
-                new Product() {Id=3, Name="Samsung S8", ImageUrl="-", Price="100", ProductCategories"YOK"},
-                new Product() {Id=4, Name="Samsung S9", ImageUrl="-", Price="100", ProductCategories"YOK"}
+                new Product() {Id=1, Name="Samsung S6", ImageUrl="-", Price=100},
+                new Product() {Id=2, Name="Samsung S7", ImageUrl="-", Price=100},
+                new Product() {Id=3, Name="Samsung S8", ImageUrl="-", Price=100},
+                new Product() {Id=4, Name="Samsung S9", ImageUrl="-", Price=100}
             };
 
             return product;

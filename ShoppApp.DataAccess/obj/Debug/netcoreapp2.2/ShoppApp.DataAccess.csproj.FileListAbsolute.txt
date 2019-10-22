@@ -1,0 +1,5 @@
+C:\Users\bkgorun\Desktop\ShopApp\ShoppApp.DataAccess\bin\Debug\netcoreapp2.2\ShopApp.Entities.dll
+C:\Users\bkgorun\Desktop\ShopApp\ShoppApp.DataAccess\obj\Debug\netcoreapp2.2\ShoppApp.DataAccess.csprojAssemblyReference.cache
+C:\Users\bkgorun\Desktop\ShopApp\ShoppApp.DataAccess\obj\Debug\netcoreapp2.2\ShoppApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\bkgorun\Desktop\ShopApp\ShoppApp.DataAccess\obj\Debug\netcoreapp2.2\ShoppApp.DataAccess.AssemblyInfoInputs.cache
+C:\Users\bkgorun\Desktop\ShopApp\ShoppApp.DataAccess\obj\Debug\netcoreapp2.2\ShoppApp.DataAccess.AssemblyInfo.cs

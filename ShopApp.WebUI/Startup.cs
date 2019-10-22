@@ -40,7 +40,6 @@ namespace ShopApp.WebUI
                 //dotnet ef database update
                 SeedDatabase.Seed();
             }
-            SeedDatabase.Seed();
             app.UseMvcWithDefaultRoute();
         }
     }

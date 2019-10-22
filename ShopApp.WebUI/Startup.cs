@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using ShopApp.Business.Abstract;
 using ShopApp.Business.Concrete;
 using ShoppApp.DataAccess.Abstract;
+using ShoppApp.DataAccess.Concrete.EFCore;
 using ShoppApp.DataAccess.Concrete.Memory;
 
 namespace ShopApp.WebUI
@@ -33,8 +34,13 @@ namespace ShopApp.WebUI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
 
+                //dotnet ef database drop
+                //dotnet ef migrations add CreateDatabase
+                //dotnet ef database update
+                SeedDatabase.Seed();
+            }
+            SeedDatabase.Seed();
             app.UseMvcWithDefaultRoute();
         }
     }

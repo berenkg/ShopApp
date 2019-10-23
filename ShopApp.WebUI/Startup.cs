@@ -10,7 +10,6 @@ using ShopApp.Business.Abstract;
 using ShopApp.Business.Concrete;
 using ShoppApp.DataAccess.Abstract;
 using ShoppApp.DataAccess.Concrete.EFCore;
-using ShoppApp.DataAccess.Concrete.Memory;
 
 namespace ShopApp.WebUI
 {
@@ -21,7 +20,7 @@ namespace ShopApp.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             //Deneme amaçlı eklenmiş bir satırdır. Dependency Injection teknolojisini anlamak için eklenmiştir.
-            services.AddScoped<IProductDal, MemoryProductDal>();
+            services.AddScoped<IProductDal, EFCoreProductDal>();
 
             services.AddScoped<IProductService, ProductManager>();
 

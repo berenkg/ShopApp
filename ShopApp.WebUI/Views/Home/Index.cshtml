@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ShopApp.Entities.Product>
+﻿@model ShopApp.WebUI.Models.ProductListModel
 @{
     Layout = null;
 }
@@ -11,9 +11,11 @@
     <title>Index</title>
 </head>
 <body>
-    @foreach(var i in Model)
-    {
-        <p>@i.Name</p>
-    }
+        @foreach (var item in Model.Products)
+        {
+            <p>@item.Name</p>
+
+        }
+ 
 </body>
 </html>

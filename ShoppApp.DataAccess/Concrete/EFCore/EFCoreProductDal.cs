@@ -1,4 +1,5 @@
-﻿using ShopApp.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using ShopApp.Entities;
 using ShoppApp.DataAccess.Abstract;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,18 @@ namespace ShoppApp.DataAccess.Concrete.EFCore
         public IEnumerable<Product> GetPopularProducts()
         {
             throw new NotImplementedException();
+        }
+
+        public Product GetProductDetails(int id)
+        {
+            using (var context = new ShopContext())
+            {
+                return context.Products
+                    .Where(i => i.Id == id)
+                    .Include(i => i.ProductCategories)//Product.ProductCategories
+                    .ThenInclude(i => i.Category)//ProductCategories.Category
+                    .FirstOrDefault();
+            }
         }
     }
 }

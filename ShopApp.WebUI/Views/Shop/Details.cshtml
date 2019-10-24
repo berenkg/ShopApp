@@ -1,0 +1,27 @@
+﻿@model  ShopApp.WebUI.Models.ProductCategoryModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <img style="height:400px;" src="/lib/img/@Model.Product.ImageUrl" alt="@Model.Product.Name" />
+    </div>
+    <div class="col-md-9">
+        <h1>@Model.Product.Name</h1>
+        <hr />
+        <div class="col-md-12">
+            <p>@Model.Product.Price TL</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Categories</h2>
+        @foreach (var item in Model.Categories)
+        {
+            <p>@item.ProductCategories[0].Category.Name</p>
+        }
+
+    </div>
+</div>

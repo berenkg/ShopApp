@@ -1,6 +1,6 @@
 ﻿@model ShopApp.WebUI.Models.ProductListModel
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -8,15 +8,32 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link href="~/lib/lib/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" />
     <title>Index</title>
 </head>
 <body>
-        @foreach (var item in Model.Products)
-        {
-            <p>@item.Name</p>
 
-        }
- 
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="list-group">
+                <li class="list-group-item">Telefon</li>
+                <li class="list-group-item">Bilgisayar</li>
+                <li class="list-group-item">Elektronik</li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+
+            @Html.Partial("/Views/Shared/_slider.cshtml")
+
+            <div class="row">
+                @foreach (var item in Model.Products)
+                {
+                    @Html.Partial("/Views/Shared/_ProductCard.cshtml", item)
+
+                }
+            </div>
+
+            </div>
+    </div>
+       
 </body>
 </html>

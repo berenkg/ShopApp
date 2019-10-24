@@ -23,8 +23,9 @@ namespace ShopApp.WebUI
         {
             //Deneme amaçlı eklenmiş bir satırdır. Dependency Injection teknolojisini anlamak için eklenmiştir.
             services.AddScoped<IProductDal, EFCoreProductDal>();
-
             services.AddScoped<IProductService, ProductManager>();
+            services.AddScoped<ICategoryDal, EFCoreCategoryDal>();
+            services.AddScoped<ICategoryService, CategoryManager>();
 
             services.AddMvc();
         }

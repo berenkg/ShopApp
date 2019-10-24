@@ -19,18 +19,6 @@ namespace ShoppApp.DataAccess.Concrete.Memory
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Product> GetAll(Expression<Func<Product, bool>> filter = null)
-        {
-            var product = new List<Product>()
-            {
-                new Product() {Id=1, Name="Samsung S6", ImageUrl="-", Price=100},
-                new Product() {Id=2, Name="Samsung S7", ImageUrl="-", Price=100},
-                new Product() {Id=3, Name="Samsung S8", ImageUrl="-", Price=100},
-                new Product() {Id=4, Name="Samsung S9", ImageUrl="-", Price=100}
-            };
-
-            return product;
-        }
 
         public Product GetById(int id)
         {
@@ -55,6 +43,19 @@ namespace ShoppApp.DataAccess.Concrete.Memory
         public void Update(Product entity)
         {
             throw new NotImplementedException();
+        }
+
+        List<Product> IRepository<Product>.GetAll(Expression<Func<Product, bool>> filter)
+        {
+            var product = new List<Product>()
+            {
+                new Product() {Id=1, Name="Samsung S6", ImageUrl="-", Price=100},
+                new Product() {Id=2, Name="Samsung S7", ImageUrl="-", Price=100},
+                new Product() {Id=3, Name="Samsung S8", ImageUrl="-", Price=100},
+                new Product() {Id=4, Name="Samsung S9", ImageUrl="-", Price=100}
+            };
+
+            return product;
         }
     }
 }

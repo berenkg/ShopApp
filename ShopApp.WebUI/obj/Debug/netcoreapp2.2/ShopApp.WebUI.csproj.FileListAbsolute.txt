@@ -36,3 +36,4 @@ C:\Users\bkgorun\Desktop\ShopApp\ShopApp.WebUI\obj\Debug\netcoreapp2.2\Razor\Vie
 C:\Users\bkgorun\Desktop\ShopApp\ShopApp.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Index.g.cshtml.cs
 C:\Users\bkgorun\Desktop\ShopApp\ShopApp.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Shop\Details.g.cshtml.cs
 C:\Users\bkgorun\Desktop\ShopApp\ShopApp.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\CategoryList\Default.g.cshtml.cs
+C:\Users\bkgorun\Desktop\ShopApp\ShopApp.WebUI\obj\Debug\netcoreapp2.2\Razor\Views\Shop\List.g.cshtml.cs

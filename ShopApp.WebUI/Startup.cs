@@ -42,13 +42,27 @@ namespace ShopApp.WebUI
                 //dotnet ef database update
                 SeedDatabase.Seed();
             }
-            app.UseMvcWithDefaultRoute();
+            
             app.UseStaticFiles();
             app.UseStaticFiles(new StaticFileOptions
             {
                 FileProvider = new PhysicalFileProvider(
             Path.Combine(Directory.GetCurrentDirectory(), "wwwdata")),
                 RequestPath = "/lib"
+            });
+
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                   name: "products",
+                   template: "products/{controller}/{action}/{category?}"
+                   );
+
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}"
+                    );
             });
         
     }

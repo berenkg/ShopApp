@@ -40,6 +40,11 @@ namespace ShoppApp.DataAccess.Concrete.Memory
             throw new NotImplementedException();
         }
 
+        public List<Product> GetProductsByCategory(string category)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(Product entity)
         {
             throw new NotImplementedException();

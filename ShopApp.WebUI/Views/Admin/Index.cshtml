@@ -28,7 +28,11 @@
                     <td>@item.Price</td>
                     <td>
                         <a href="/admin/products/@item.Id" class="btn btn-primary">Edit</a>
-                        <a href="/admin/products/@item.Id" class="btn btn-danger">Delete</a>
+                        <form asp-controller="Admin" asp-action="Delete" method="post">
+                            <input hidden name="delete" value="@item.Id" />
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                        
                     </td>
                 </tr>
             }

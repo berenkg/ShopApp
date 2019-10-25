@@ -21,7 +21,11 @@ namespace ShopApp.WebUI.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(new ProductListModel()
+            {
+                Products = _productService.GetAll()
+            }
+            );
         }
 
         public IActionResult CreateProduct()
@@ -44,5 +48,11 @@ namespace ShopApp.WebUI.Controllers
             return Redirect("Index");
 
         }
+
+        public IActionResult Edit(int id)
+        {
+            return View();
+        }
+      
     }
 }

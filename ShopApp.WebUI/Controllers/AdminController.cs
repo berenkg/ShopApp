@@ -13,7 +13,7 @@ namespace ShopApp.WebUI.Controllers
     {
         private IProductService _productService;
 
-        public  AdminController(IProductService productService)
+        public AdminController(IProductService productService)
         {
             _productService = productService;
         }
@@ -51,8 +51,42 @@ namespace ShopApp.WebUI.Controllers
 
         public IActionResult Edit(int id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var entity = _productService.GetById(id);
+            if (entity == null)
+            {
+                return NotFound();
+            }
+            var model = new ProductModel()
+            {
+                Id = entity.Id,
+                Name = entity.Name,
+                Description = entity.Description,
+                Price = entity.Price,
+                ImageUrl = entity.ImageUrl
+            };
+            return View(model);
         }
-      
+        [HttpPost]
+        public IActionResult Edit(ProductModel model)
+        {
+            var entity = _productService.GetById(model.Id);
+
+            if(entity==null)
+            {
+                return NotFound();
+            }
+            entity.Name = model.Name;
+            entity.Description = model.Description;
+            entity.Price = model.Price;
+            entity.ImageUrl = model.ImageUrl;
+
+            _productService.Update(entity);
+            return RedirectToAction("Index");
+        }
     }
 }

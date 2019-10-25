@@ -47,9 +47,9 @@ namespace ShopApp.Business.Concrete
             return _productDal.GetProductDetails(id);
         }
 
-        public List<Product> GetProductsByCategory(string category)
+        public List<Product> GetProductsByCategory(string category, int page = 1, int pageSize=3)
         {
-            return _productDal.GetProductsByCategory(category);
+            return _productDal.GetProductsByCategory(category, page, pageSize);
         }
 
         public void Update(Product entity)

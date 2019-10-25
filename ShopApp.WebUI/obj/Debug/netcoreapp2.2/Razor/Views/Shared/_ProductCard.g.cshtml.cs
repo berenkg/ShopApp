@@ -13,18 +13,18 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#line 2 "C:\Users\bkgorun\Desktop\ShopApp\ShopApp.WebUI\Views\Shared\_ViewImports.cshtml"
+#line 2 "C:\Users\bkgorun\Desktop\ShopApp\ShopApp.WebUI\Views\_ViewImports.cshtml"
 using ShopApp.WebUI.Models;
 
 #line default
 #line hidden
-#line 3 "C:\Users\bkgorun\Desktop\ShopApp\ShopApp.WebUI\Views\Shared\_ViewImports.cshtml"
+#line 3 "C:\Users\bkgorun\Desktop\ShopApp\ShopApp.WebUI\Views\_ViewImports.cshtml"
 using ShopApp.Entities;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e289b6be5f8211a31e7bbc5562e418026ee33f7e", @"/Views/Shared/_ProductCard.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"21ef84573e7d7c451bd440542b6e841681414892", @"/Views/Shared/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"347b7be2f8b3cec51ab783c274c53a46b5c62de2", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__ProductCard : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Product>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("style", new global::Microsoft.AspNetCore.Html.HtmlString("height:400px;"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -56,7 +56,7 @@ using ShopApp.Entities;
             WriteLiteral("<div class=\"col-md-4 \">\r\n    <br />\r\n    <div class=\"card ml-3\" style=\"width: 18rem;\">\r\n        ");
             EndContext();
             BeginContext(112, 90, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e289b6be5f8211a31e7bbc5562e418026ee33f7e4416", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e289b6be5f8211a31e7bbc5562e418026ee33f7e4395", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

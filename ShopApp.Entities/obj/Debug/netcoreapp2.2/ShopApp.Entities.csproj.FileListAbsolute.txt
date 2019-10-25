@@ -6,3 +6,4 @@ C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopAp
 C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopApp.Entities.AssemblyInfo.cs
 C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopApp.Entities.dll
 C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopApp.Entities.pdb
+C:\Users\bkgorun\Desktop\ShopApp\ShopApp.Entities\obj\Debug\netcoreapp2.2\ShopApp.Entities.csprojAssemblyReference.cache
